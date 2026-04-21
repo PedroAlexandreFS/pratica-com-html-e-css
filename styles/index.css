@@ -6,90 +6,67 @@
     box-sizing: border-box;
 }
 
-html,body{
+html,
+body {
     height: 100%;
-}
-
-/*==== CABEÇALHO ====*/
-header {
-    margin-top: 100px;
-    text-align: center;
-    padding: 20px;
 }
 
 
 /*==== MENU DE NAVEGAÇÃO ====*/
-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    text-align: center;
-    padding: 30px;
+.menu {
+    display: flex;
     background: black;
+    height: 10%;
+    text-align: center;
 }
 
-nav a {
-    margin: 30px;
-    padding: 10px 20px;
+.logo{
+    align-content: center;
+    flex: 15%;
+    margin-left: 10%;
+}
+
+.logo h2 {
     color: white;
-    text-decoration: none;
-    transition: all 0.4s ease;
-    font-size: 17px;
+    font-size: 30px;
+    background: rgb(189, 1, 1);
+    height: 100%;
+    width: 25%;
+    padding: 10px 5px 10px 5px;
 }
 
-nav a:hover {
-    background: gray;
-    border-radius: 5px;
+.logo h2 span {
+    display: block;
+    font-size: 13px;
+    margin-top: 0;
+    letter-spacing: 3px;
 }
+
+.navegacao {
+    flex: 60%;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+.navegacao a {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 15px 0;
+    margin-right:40px ;
+    transition: all 0.2s ease-in;
+}
+
+.navegacao a:hover{
+    border-bottom: 3px solid  rgb(189, 1, 1);
+}
+
+/*==== CABEÇALHO ====*/
+
+
+
 
 /*==== CONTEUDO PRINCIPAL ====*/
-main {
-    border-bottom: 3px double rgb(182, 180, 180);
-    padding: 20px;
-    background: rgb(208, 207, 207);
-    padding-bottom: 100px;
-   
-}
 
-main img {
-    border-radius: 10px;
-    margin-left: 100px;
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-}
-
-h2 {
-    padding: 18px 0;
-    margin-left: 100px;
-}
-
-p {
-    padding: 20px 0;
-    display: inline-block;
-    margin-left: 100px;
-    width: 300px;
-}
-
-div {
-    display: inline-block;
-}
 
 /* ==== rodapé ====*/
-footer {
-    background: black;
-    width: 100%;
-    padding: 20px;
-    text-align: center;
-}
-
-footer a {
-    margin-left: 30px;
-    text-decoration: none;
-    color: white;
-    padding: 10px 20px;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
